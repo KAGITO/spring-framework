@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--bean是spring的一等公民,beans标签的内容主要是用来定义spring容器里面的bean的标签的规范-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	<!--id-bean的唯一可标识的名字-->
+	<!--class-实现类的路径-->
+	<!--有了接口，有了实现类，有了bean的定义，就能将相关的实现类化为bean托管到容器中-->
+	<bean id="demoService" class="com.kagito.service.impl.DemoServiceImpl" />
+</beans>
+
